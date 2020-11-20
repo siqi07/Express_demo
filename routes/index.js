@@ -10,6 +10,10 @@ router.get('/t', function(req, res, next) {
   res.send("test");
 });
 
+router.get('/login', function(req, res, next){
+  res.render('login', { title: 'login'});
+});
+
 router.post("/", function(req, res) {
   res.send("a POST request? nice");
 });
